@@ -1,14 +1,14 @@
 /*eslint-disable*/
 import React from "react";
 
-import Navbar from "components/Navbar"
-import StatusBar from "components/StatusBar"
+import StatusBar from "components/StatusBar";
+import ActivityBar from "components/ActivityBar";
 
 export default function Index() {
   return (
     <>
-      <div className="container subpixel-antialiased">
-        <Navbar />
+      <div className="container subpixel-antialiased flex">
+        <ActivityBar />
         <StatusBar />
       </div>
     </>
