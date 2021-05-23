@@ -94,9 +94,6 @@ module.exports = {
       serif: ["Inter", "serif"],
     },
     extend: {
-      minHeight: {
-        "screen-75": "75vh",
-      },
       fontSize: {
         xs: ".75rem",
         sm: ".875rem",
@@ -113,7 +110,7 @@ module.exports = {
       },
       backgroundSize: {
         full: "100%",
-      },
+      }
     },
   },
   plugins: [],
