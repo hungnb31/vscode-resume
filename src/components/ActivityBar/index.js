@@ -1,32 +1,19 @@
 import React from "react";
 
+import ActivityItem from './ActivityItem';
 import SVGFiles from 'assets/img/activity/Files';
+import SVGSearch from 'assets/img/activity/Search';
 
 const ActivityBar = () => {
   return (
-    <div className="absolute left-0 bg-base-base17 h-full w-12 py-5 px-2">
+    <div className="absolute left-0 bg-base-base17 h-full w-12">
       <div className="flex flex-col items-center">
-        <div className="py-3">
-          <SVGFiles className="fill-current text-accents-red01" />
-        </div>
-        {/* <div className="py-3">
-          <img
-            src={require("assets/img/activity/files.svg").default}
-            alt="files"
-          />
-        </div>
-        <div className="py-3">
-          <img
-            src={require("assets/img/activity/files.svg").default}
-            alt="files"
-          />
-        </div>
-        <div className="py-3">
-          <img
-            src={require("assets/img/activity/files.svg").default}
-            alt="files"
-          />
-        </div> */}
+        <ActivityItem>
+          <SVGFiles className="fill-current text-base-base01" />
+        </ActivityItem>
+        <ActivityItem>
+          <SVGSearch className="fill-current text-base-base01" />
+        </ActivityItem>
       </div>
     </div>
   );
