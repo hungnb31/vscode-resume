@@ -3,15 +3,15 @@ import React from "react";
 const SVGFiles = (props) => {
   return (
     <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path
-        d="M17.5 0H8.5L7 1.5V6H2.5L1 7.5V22.5699L2.5 24H14.5699L16 22.5699V18H20.7L22 16.5699V4.5L17.5 0ZM17.5 2.12L19.88 4.5H17.5V2.12ZM14.5 22.5H2.5V7.5H7V16.5699L8.5 18H14.5V22.5ZM20.5 16.5H8.5V1.5H16V6H20.5V16.5Z"
+        d="M29.5 12H20.5L19 13.5V18H14.5L13 19.5V34.5699L14.5 36H26.5699L28 34.5699V30H32.7L34 28.5699V16.5L29.5 12ZM29.5 14.12L31.88 16.5H29.5V14.12ZM26.5 34.5H14.5V19.5H19V28.5699L20.5 30H26.5V34.5ZM32.5 28.5H20.5V13.5H28V18H32.5V28.5Z"
         fill={props.fill}
       />
     </svg>
