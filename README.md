@@ -1,1 +1,1 @@
-# vscode-resume
+# Resume Template with VSCode Interface
