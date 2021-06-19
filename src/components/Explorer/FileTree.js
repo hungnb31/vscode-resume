@@ -6,7 +6,7 @@ const FileTree = ({ tree, isOpen }) => {
       <ul className={`${isOpen ? "block" : "hidden"}`}>
         {tree.map((item, idx) => {
           return (
-            <li className="flex items-center cursor-pointer py-1 px-5 hover:bg-base-base17" key={idx}>
+            <li className="flex items-center py-1 px-5 hover:bg-base-base17 cursor-pointer" key={idx}>
               <item.icon className={`text-lg mr-2 w-4 ${item.color}`} />
               <span className="font-semibold">{item.name}</span>
             </li>
