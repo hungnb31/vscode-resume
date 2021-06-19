@@ -12,6 +12,7 @@ export default function Index() {
         <div className="absolute left-0 flex h-full">
           <ActivityBar />
           <Explorer />
+          <div className="bg-accents-red02"></div>
         </div>
         <StatusBar />
       </div>

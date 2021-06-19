@@ -5,8 +5,8 @@ import StatusBarItem from "./StatusBarItem";
 export default function Footer() {
   return (
     <>
-      <div className="absolute bottom-0 bg-accents-blue06 text-base-base01 text-xs w-full h-7 flex justify-between">
-        <div className="flex flex-wrap flex-row px-3">
+      <div className="absolute bottom-0 bg-accents-blue06 text-base-base01 text-xs w-full h-6 flex justify-between">
+        <ul className="flex flex-wrap flex-row px-3">
           <StatusBarItem>
             <div className="codicon codicon-source-control"></div>
             &nbsp;
@@ -21,8 +21,8 @@ export default function Footer() {
             &nbsp;
             <span>0</span>
           </StatusBarItem>
-        </div>
-        <div className="flex flex-wrap flex-row px-3">
+        </ul>
+        <ul className="flex flex-wrap flex-row px-3">
           <StatusBarItem>
             <span>Space: 2</span>
           </StatusBarItem>
@@ -41,7 +41,7 @@ export default function Footer() {
           <StatusBarItem>
             <div className="codicon codicon-bell"></div>
           </StatusBarItem>
-        </div>
+        </ul>
       </div>
     </>
   );

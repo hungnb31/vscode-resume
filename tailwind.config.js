@@ -87,6 +87,10 @@ module.exports = {
         ignore: "#41535B",
         white: "#D4D7D6",
         gray: "#6D8086"
+      },
+      fileicon: {
+        javascript: "#f9cb49",
+        markdown: "#57a4f0"
       }
     },
     fontFamily: {
