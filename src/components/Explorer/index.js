@@ -1,33 +1,12 @@
 import React, { useState } from "react";
-import { IoInformationCircleSharp, IoLogoJavascript } from "react-icons/io5"
 
 import FileTree from "./FileTree";
 
 const Explorer = () => {
   const [openTree, setOpenTree] = useState(true);
-  const [tree] = useState([
-    {
-      name: "PROJECTS.md",
-      icon: IoInformationCircleSharp,
-      color: "text-fileicon-markdown",
-      link: "/first-project",
-    },
-    {
-      name: "ABOUTME.md",
-      icon: IoInformationCircleSharp,
-      color: "text-fileicon-markdown",
-      link: "/about-me",
-    },
-    {
-      name: "index.js",
-      icon: IoLogoJavascript,
-      color: "text-fileicon-javascript",
-      link: "/about-me",
-    },
-  ]);
 
   return (
-    <div className="flex flex-col w-72 bg-base-base20 text-xs text-base-base06">
+    <div className="flex flex-col w-72 min-w-max bg-base-base20 text-xs text-base-base06">
       <div className="w-full">
         <div className="h-9 px-3 flex flex-wrap content-center justify-between">
           <span className="uppercase flex content-center flex-wrap">
@@ -37,10 +16,10 @@ const Explorer = () => {
             <div className="codicon codicon-ellipsis"></div>
           </div>
         </div>
-        <div className="h-6 flex flex-wrap flex-row">
+        <div className="h-6 flex flex-wrap flex-row justify-between">
           <div
             role="button"
-            className="flex flex-wrap flex-row content-center cursor-pointer flex-grow focus:ring-2"
+            className="flex flex-wrap flex-row content-center cursor-pointer focus:ring-2 mr-3"
             onClick={() => setOpenTree(!openTree)}
           >
             <div
@@ -62,7 +41,7 @@ const Explorer = () => {
           </div>
         </div>
         <div className={"h-auto flex flex-wrap flex-col"}>
-          <FileTree tree={tree} isOpen={openTree} />
+          <FileTree isOpen={openTree} />
         </div>
       </div>
     </div>
